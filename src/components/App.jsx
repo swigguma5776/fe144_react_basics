@@ -16,8 +16,9 @@ function App() {
       <h1>Howdy Y'all from the Yacht Rock crew</h1>
       {/* don't use this a lot unless it's another component */}
       {myElement} 
-      <Greetings />
-      <ClassGreetings />
+      <Greetings initialNation='Earth' initialName='Toph' />
+      {/* this is how we pass data from 1 component to the next */}
+      <ClassGreetings initialName='Jesica' initialPet='Romeo'/>
     </div>
   )
 }
